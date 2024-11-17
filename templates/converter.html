@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Forex Converter{% endblock %}
+{% block content %} 
+<p id = "error"></p>
+
+<form method="POST" id="converter-form">
+    <div class = "form-group">
+
+    <label for="from">Converting From:</label>
+    <input type="text" name ="from" class = "form-text">
+    </div>
+
+    <div class = "form-group">
+    <label for="to">Converting To:</label>
+    <input type="text" name ="to" class = "form-text">
+
+    </div>
+    
+    <div class = "form-group"></div>
+    <label for="amount">Amount:</label>
+    <input type="number" name = "amount" class = "form-text">
+    </div>
+    <hr>
+
+    <input id = "submit-button" value = "Convert" type="submit"class = "btn btn-primary">
+    <hr>
+
+</form>
+
+{% endblock %}
